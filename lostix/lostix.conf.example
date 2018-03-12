@@ -1,0 +1,2 @@
+LOGSTASH_URL="http://localhost:9600"
+CACHE_TTL=1
