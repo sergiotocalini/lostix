@@ -1,0 +1,2 @@
+# lostix
+Zabbix Agent - Logstash
