@@ -5,7 +5,7 @@ ZABBIX_DIR=/etc/zabbix
 LOGSTASH_SERVER=${1:-localhost}
 LOGSTASH_PORT=${2:-9022}
 LOGSTASH_METHOD=${3:-http}
-LOGSTASH_URL="${ELASTIC_METHOD}://${ELASTIC_SERVER}:${ELASTIC_PORT}"
+LOGSTASH_URL="${LOGSTASH_METHOD}://${LOGSTASH_SERVER}:${LOGSTASH_PORT}"
 
 mkdir -p ${ZABBIX_DIR}/scripts/agentd/lostix
 cp ${SOURCE_DIR}/lostix/lostix.conf.example ${ZABBIX_DIR}/scripts/agentd/lostix/lostix.conf
