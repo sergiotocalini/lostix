@@ -11,7 +11,8 @@ PATH=/usr/local/bin:${PATH}
 APP_NAME=$(basename $0)
 APP_DIR=$(dirname $0)
 APP_VER="0.0.1"
-APP_WEB="http://www.sergiotocalini.com.ar/"
+APP_WEB="https://sergiotocalini.github.io/"
+APP_FIX="https://github.com/sergiotocalini/lostix/issues"
 TIMESTAMP=`date '+%s'`
 CACHE_DIR=${APP_DIR}/tmp
 CACHE_TTL=5                                      # IN MINUTES
@@ -43,7 +44,7 @@ usage() {
     echo "  -s ARG(str)   Section (default=stat)."
     echo "  -v            Show the script version."
     echo ""
-    echo "Please send any bug reports to sergiotocalini@gmail.com"
+    echo "Please send any bug reports to ${APP_FIX}"
     exit 1
 }
 
