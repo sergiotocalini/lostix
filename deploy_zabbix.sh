@@ -42,9 +42,9 @@ while getopts ":o:p:u:P:Z:FH" OPTION; do
     esac
 done
 
-[ -n "${SCRIPT_DIR}"  ] || SCRIPT_DIR="${ZABBIX_DIR}/scripts/agentd/lostix"
-[ -n "${ZABBIX_INC}"  ] || ZABBIX_INC="${ZABBIX_DIR}/zabbix_agentd.d"
-[ -n "${LOGSTASH_URL}" ] || LIBVIRT_URI="http://localhost:9600"
+[ -n "${SCRIPT_DIR}"  ]  || SCRIPT_DIR="${ZABBIX_DIR}/scripts/agentd/lostix"
+[ -n "${ZABBIX_INC}"  ]  || ZABBIX_INC="${ZABBIX_DIR}/zabbix_agentd.d"
+[ -n "${LOGSTASH_URL}" ] || LOGSTASH_URL="http://localhost:9600"
 
 # Creating necessary directories
 mkdir -p "${SCRIPT_DIR}" "${ZABBIX_INC}" 2>/dev/null
